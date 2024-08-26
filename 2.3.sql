@@ -1,0 +1,1 @@
+SELECT name FROM producer, (SELECT mid FROM movie, genre WHERE mid=movie_id AND year = 2001 AND genre IN (SELECT genre FROM genre GROUP BY genre HAVING COUNT(movie_id) >= 200)) WHERE movie_id=mid;

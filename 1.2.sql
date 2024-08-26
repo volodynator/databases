@@ -1,0 +1,1 @@
+SELECT DISTINCT name FROM producer LEFT JOIN movie ON movie_id=mid WHERE mid is NULL ORDER BY name ASC;

@@ -1,0 +1,1 @@
+SELECT title, COUNT(name) AS anzahl FROM movie, actor WHERE mid=movie_id GROUP BY title ORDER BY anzahl DESC FETCH FIRST 3 ROWS ONLY;
